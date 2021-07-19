@@ -1,0 +1,59 @@
+/* body {
+  background-image: url("../images/complex.jpg");
+  background-repeat: no-repeat;
+  background-height */
+/* width: 1349px;
+  height: 1349px;
+  position: relative;
+  opacity: 1; */
+/* z-index: 999; */
+/* } */
+
+.hero {
+  background-image: url("../images/newOne.jpg");
+  /* background-color: #cccccc; */
+  height: 665px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0 0 0 1000px rgba(59, 179, 143, 0.288);
+}
+
+.heroSect {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40rem;
+}
+
+.hero-text {
+  color: white;
+  position: relative;
+}
+
+.hero-text h2 {
+  width: 50%;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 29px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.form-wrapper {
+  background-color: white;
+  height: 30rem;
+  width: 27rem;
+  padding: 45px 35px 35px 35px;
+}
+
+/* .form h2 {
+  text-align: center;
+  color: rgb(2, 36, 2);
+  font-size: 30px;
+  padding: 10px;
+} */
