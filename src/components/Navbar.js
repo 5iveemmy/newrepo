@@ -25,16 +25,7 @@ function Navbar() {
     }
   }
 
-  // function scrollFunction() {
-  //   if (
-  //     document.body.scrollTop > 550 ||
-  //     document.documentElement.scrollTop > 550
-  //   ) {
-  //     document.getElementsByClassName("nav-menu").style.top = "10";
-  //   } else {
-  //     document.getElementsByClassName("nav-menu").style.top = "100px";
-  //   }
-  // }
+  // function scrollFunction()
 
   return (
     <>
