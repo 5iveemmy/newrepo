@@ -1,13 +1,33 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./HeroSection.css";
-import { FaWarehouse } from "react-icons/fa";
+import { FaArrowUp, FaWarehouse } from "react-icons/fa";
 
 function HeroSection() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const [button, setButton] = useState(true);
+
+  // const mybutton = document.getElementById("myBtn");
+
+  // window.onscroll = function () {
+  //   scrollFunction();
+  // };
+
+  // function scrollFunction() {
+  //   if (
+  //     document.body.scrollTop > 350 ||
+  //     document.documentElement.scrollTop > 350
+  //   ) {
+  //     mybutton.style.display = "block";
+  //   } else {
+  //     mybutton.style.display = "none";
+  //   }
+  // }
+
+  // function topFunction() {
+  //   document.documentElement.scrollTop = 0;
+  // }
 
   return (
     <>
@@ -48,7 +68,7 @@ function HeroSection() {
                   </Link>
                 </li>
                 <div className="right-btn">
-                  <button className="first-btn ">Apply for loan</button>
+                  <button className="first-btn ">Apply For Loan</button>
                 </div>
               </ul>
             </div>

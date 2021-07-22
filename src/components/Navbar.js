@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import { FaWarehouse } from "react-icons/fa";
+import { FaArrowUp, FaWarehouse } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import { Button } from "./Button";
 import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true);
-
   const handleClick = () => setClick(!click);
+
+  // const mybutton = document.getElementById("myBtn");
 
   window.onscroll = function () {
     scrollFunction();
@@ -19,13 +18,17 @@ function Navbar() {
       document.body.scrollTop > 350 ||
       document.documentElement.scrollTop > 350
     ) {
-      document.getElementById("navbar").style.top = "0";
+      (document.getElementById("navbar").style.top = "0") &&
+        (document.getElementById("myBtn").style.display = "block");
     } else {
-      document.getElementById("navbar").style.top = "-100px";
+      (document.getElementById("navbar").style.top = "-100px") &&
+        (document.getElementById("myBtn").style.display = "none");
     }
   }
 
-  // function scrollFunction()
+  function topFunction() {
+    document.documentElement.scrollTop = 0;
+  }
 
   return (
     <>
@@ -66,12 +69,15 @@ function Navbar() {
                 </Link>
               </li>
               <div className="right-btn">
-                <button className="first-btn ">Apply for loan</button>
+                <button className="first-btn">Apply For Loan</button>
               </div>
             </ul>
           </div>
         </div>
       </nav>
+      <button onClick={topFunction} id="myBtn" title="Go to Top">
+        <FaArrowUp className="arrow" />
+      </button>
     </>
   );
 }

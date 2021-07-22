@@ -14,8 +14,8 @@
 .first-btn {
   height: 3.5rem;
   padding: 21px 40px;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 13px;
   background: #10c98f;
   color: #fff;
   border-radius: 0px;
@@ -276,7 +276,6 @@
     cursor: pointer;
   }
   .fa-bars {
-    /* font-weight: none; */
     transform: scale(2.4, 1.6);
   }
   .nav-menu {
@@ -301,7 +300,6 @@
   }
   .nav-item {
     height: 35px;
-    /* line-height: 22.5px; */
     margin: 1px 4px;
     padding: 1px 10px;
   }
